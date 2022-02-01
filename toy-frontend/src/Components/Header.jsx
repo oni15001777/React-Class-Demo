@@ -1,6 +1,7 @@
 import React from 'react'
-import {Navbar, Container, Nav,} from 'react-bootstrap'
+import {Navbar, Container, Nav, Dropdown} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
+
 
 function Header() {
     return (
@@ -16,6 +17,17 @@ function Header() {
       
       <Nav.Link as={Link} to="/about">About Us</Nav.Link>
       <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+    </Nav>
+    <Nav>
+      <Dropdown>
+        <Dropdown.Toggle className="mx-4 justify-content-end" variant="success" id="dropdown-basic">
+          Admin Panel
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="/admin/addproduct">Add Product</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
     </Nav>
     </Container>
   </Navbar>
