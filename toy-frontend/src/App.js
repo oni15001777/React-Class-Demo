@@ -11,6 +11,7 @@ import AboutScreen from './Screens/AboutScreen'
 import ContactScreen from './Screens/ContactScreen'
 import LocationsScreen from './Screens/LocationsScreen';
 import AddProductScreen from './Screens/AddProductScreen';
+import SingleProductScreen from './Screens/SingleProductScreen';
 
 //import routing for page navigation
 import {
@@ -28,6 +29,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<HomeScreen/>} />
             <Route exact path ="/products" element={<ProductScreen/>}/>
+            <Route exact path ="/products/:id" element={<SingleProductScreen/>}/>
             <Route exact path ="/locations" element={<LocationsScreen/>}/>
             <Route exact path ="/about" element={<AboutScreen/>}/>
             <Route exact path ="/contact" element={<ContactScreen/>}/>
