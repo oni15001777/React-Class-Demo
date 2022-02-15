@@ -26,6 +26,7 @@ function Header() {
 
         <Dropdown.Menu>
           <Dropdown.Item href="/admin/addproduct">Add Product</Dropdown.Item>
+          <Dropdown.Item href="/admin/manageproducts">Manage Products</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     </Nav>
